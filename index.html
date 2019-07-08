@@ -8,6 +8,67 @@
   
    <!--  Styles  -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <style>
+    /* Desktop */
+  @media only screen and (min-width: 960px){
+    .container{
+      width: 960px;
+    }
+    .header-left{
+      padding: 36px 15px 70px 15px !important;
+    }
+
+  }
+  /* midsize device */
+  @media only screen and (max-width: 960px){
+    .container{
+      width: 600px;
+    }
+    
+  }
+  /* mobile device */
+  @media only screen and (max-width: 600px){
+    .container{
+      width: 100%;
+    }
+    .header-left{
+      width: 100%;
+    }
+    .header-right{
+      width: 100%;
+    }
+    .lets-you-row .left-column{
+      width: 50%;
+    }
+    .lets-you-row .center-column{
+      width: 50%;
+    }
+    .lets-you-row .right-column{
+      width: 100%;
+    }
+    .advance-table .image_head{
+      width: 100%;
+    }
+    .advance-table .left-column{
+      width: 100%;
+      text-align: center;
+    }
+    .advance-table .right-column{
+      width: 100%;
+      text-align: center;
+    }
+    .advance-table .left-column .left-store{
+      text-align: center;
+      width: 100%;
+    }
+    .advance-table .right-column .right-store{
+      text-align: center;
+      width: 100%;
+
+    }
+  }
+
+  </style>
 </head>
 <body style="background : blue;">
   <!--start of htmlemail    -->
@@ -48,7 +109,7 @@
                 <tr>
                     <td style="font-family: 'Open Sans', sans-serif, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande';
                       color: #7d7d7d; ">
-                    <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px;">
+                    <table class="menu-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px;">
                         <tr>
                             <td align="center">
                             <a href="#" style="font-size: 14px; font-weight:600; text-decoration: none; color: #7d7d7d">About</a>
@@ -75,11 +136,11 @@
           <!--end of header row -->
           <!-- start of lets you row -->
           <tr>
-            <td style="background: #fafafa;">
+            <td class="lets-you-row" style="background: #fafafa;">
               <h3 style="font-family: 'Open Sans', sans-serif, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande';
               color: #333; padding: 36px 0 16px 0px; font-weight: 300; text-transform: uppercase; font-size: 24px" align="center">Hero let's you...</h3>
               <!-- start of left column -->
-              <table class="header-left" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
+              <table class="left-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
                   style="padding:15px 15px 70px 15px;"> 
              
               <tr>
@@ -108,7 +169,7 @@
             </table>
             <!-- end of left-column -->
                   <!-- start of Center column -->
-                  <table class="header-left" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                  <table class="center-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
                   style="padding:15px 15px 70px 15px;"> 
              
               <tr>
@@ -137,7 +198,7 @@
             </table>
             <!-- end of Center-column -->
                   <!-- start of Right column -->
-                  <table class="header-left" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                  <table class="right-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
                   style="padding:15px 15px 70px 15px;"> 
              
               <tr>
@@ -176,7 +237,7 @@
                 <tr>
                   <td  style="font-family: 'Open Sans', sans-serif, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande';
                   color: #333; padding: 36px 0 16px 0px; font-weight: 300; text-transform: uppercase; font-size: 24px" align="center">
-                    <img src="img/image_head.jpg" alt="">  
+                    <img src="img/image_head.jpg" class="image_head" alt="">  
                   </td>
                 </tr>
                 <tr>
@@ -189,7 +250,7 @@
                 </tr>
                 <tr>
                   <td>
-                    <table class="advance-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                    <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
                       style="padding:15px 15px 0px 15px; background:white;"> 
                       <tr>
                         <td>
@@ -198,12 +259,12 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="right">
+                        <td align="right" class="left-store">
                           <img src="img/appstore.png" alt="">
                         </td>
                       </tr>
                     </table>
-                    <table class="advance-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                    <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" 
                     style="padding:15px 15px 0px 15px; background:white;">                     <tr>
                       <td>
                         <p style="font-family: 'Open Sans', sans-serif, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande';
@@ -211,7 +272,7 @@
                       </td>
                     </tr>
                     <tr>
-                        <td align="left">
+                        <td align="left" class="right-store">
                           <img src="img/playstore.png" alt="">
                         </td>
                       </tr>
@@ -239,7 +300,7 @@
           <!-- start of Join Together row -->
           <tr>
             <td>
-              <table class="one-solution-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
+              <table class="join-together-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" 
               style="padding:25px 0 75px; background:white;"> 
               <tr>
                 <td>
@@ -251,7 +312,7 @@
               <tr >
                 <td>
                   <!-- Start of column -->
-                  <table class="column-table" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                  <table class="left-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
                   style="padding:20px 0; background:white;"> 
                   <tr align="center">
                     <td>
@@ -276,7 +337,7 @@
                   </table>
                   <!-- end of column -->
                    <!-- Start of column -->
-                   <table class="column-table" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                   <table class="center-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
                    style="padding:20px 0; background:white;"> 
                    <tr align="center">
                      <td>
@@ -301,7 +362,7 @@
                    </table>
                    <!-- end of column -->
                     <!-- Start of column -->
-                  <table class="column-table" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
+                  <table class="right-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
                   style="padding:20px 0; background:white;"> 
                   <tr align="center">
                     <td>
@@ -342,7 +403,7 @@
                       <tr>
                         <td>
                           <!-- start of column -->
-                          <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0px 15px 20px;"> 
+                          <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0px 15px 20px;"> 
                             <tr>
                               <td>
                                 <!-- start of icon table -->
@@ -367,11 +428,11 @@
                           </table>
                           <!-- end of column-->
                             <!-- start of column -->
-                            <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 15px 20px;"> 
+                            <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 15px 20px;"> 
                                 <tr>
                                   <td>
                                     <!-- start of icon table -->
-                                    <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style=""> 
+                                    <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0"> 
                                       <td>
                                       <img src="img/phone_icon-48.png" alt="">
                                       </td>
@@ -404,7 +465,7 @@
                         <tr>
                           <td>
                             <!-- start of column -->
-                            <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0px 15px 20px;"> 
+                            <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0px 15px 20px;"> 
                               <tr>
                                 <td>
                                   <!-- start of icon table -->
@@ -429,7 +490,7 @@
                             </table>
                             <!-- end of column-->
                               <!-- start of column -->
-                              <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0px 15px 20px;"> 
+                              <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0px 15px 20px;"> 
                                   <tr>
                                     <td>
                                       <!-- start of icon table -->
@@ -466,7 +527,7 @@
                         <tr>
                           <td>
                             <!-- start of column -->
-                            <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0 15px 20px;"> 
+                            <table class="left-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0 15px 20px;"> 
                               <tr>
                                 <td>
                                   <!-- start of icon table -->
@@ -491,7 +552,7 @@
                             </table>
                             <!-- end of column-->
                               <!-- start of column -->
-                              <table class="column-table" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0px 15px 20px;"> 
+                              <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0px 15px 20px;"> 
                                   <tr>
                                     <td>
                                       <!-- start of icon table -->
@@ -553,7 +614,7 @@
           <!-- start of footer row -->
           <tr>
             <td>
-              <table class="one-solution-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:25px 0 0px; background:white;"> 
+              <table class="footer-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:25px 0 0px; background:white;"> 
               <tr>
                 <td align="center">
                   <h3 style="font-weight: 700; font-family: 'Open Sans', sans-serif, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande'; color: #1b1b1b; text-transform: uppercase; font-size: 28px;">
@@ -561,7 +622,7 @@
                   </h3>
                   <tr>
                     <td>
-                      <table class="one-solution-table" width="250px" align="center" cellspacing="0" cellpadding="0" border="0" style=""> 
+                      <table class="icon-table" width="250px" align="center" cellspacing="0" cellpadding="0" border="0" style=""> 
                         <tr align="center">
                           <td>
                             <a href="#">
