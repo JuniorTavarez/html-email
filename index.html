@@ -15,9 +15,38 @@
       width: 960px;
     }
     .header-left{
-      padding: 36px 15px 70px 15px !important;
+      padding: 36px 50px 70px !important;
     }
+    .lets-you-row{
+      padding: 0 50px;
+    }
+    .advance-table{
+      padding: 15px 50px 70px 50px !important; 
+      background: black !important;
+    }
+    .advance-table .right-column p{
+      padding-bottom: 5px !important;
+    }
+    .one-solution-table{
+      text-align: center;
+    }
+    .one-solution-table img{
+      max-width: 611px;
+    }
+    .join-together-table .left-column{
+      padding: 20px 50px !important;
 
+    }
+    .join-together-table .center-column{
+      padding: 20px 50px !important;
+
+    }
+    .join-together-table .right-column{
+      padding: 20px 50px !important;
+    }
+    .detail-table{
+      padding: 50px 50px 25px !important;
+    }
   }
   /* midsize device */
   @media only screen and (max-width: 960px){
@@ -45,6 +74,13 @@
     }
     .lets-you-row .right-column{
       width: 100%;
+      text-align: center
+    }
+    .lets-you-row .wifi-connect{
+      margin-left: auto;
+      margin-right: auto;
+      width: 29%;
+      display: block;
     }
     .advance-table .image_head{
       width: 100%;
@@ -64,9 +100,30 @@
     .advance-table .right-column .right-store{
       text-align: center;
       width: 100%;
+    }
+    .join-together-table .left-column{
+      width: 100%;
+      padding: 20px 50px !important;
 
     }
+    .join-together-table .center-column{
+      padding: 20px 50px !important;
+      width: 100%;
+
+    }
+    .join-together-table .right-column{
+      padding: 20px 50px !important;
+      width: 100%;
+
+    }
+    .detail-table .one-row-table .left-column{
+      width: 100%;
+    }
+    .detail-table .one-row-table .right-column{
+      width: 100%;
+    }
   }
+
 
   </style>
 </head>
@@ -201,13 +258,13 @@
                   <table class="right-column" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" 
                   style="padding:15px 15px 70px 15px;"> 
              
-              <tr>
+              <tr  class="wifi-connect">
                 <td>
-                    <table class="title icon" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0"> 
-                  <tr>
-                    <td><img src="img/wifi_icon.png"> </td>
+                    <table class="title icon" width="33.33%" align="left" cellspacing="0" cellpadding="0" border="0" > 
+                  <tr >
+                    <td ><img src="img/wifi_icon.png"> </td>
                     <td style="font-family: 'Open Sans', sans-serif, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande';
-                    color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;">Connect</td>
+                    color: #333; padding: 0 0 0 15px; font-weight: 600; text-transform: uppercase; font-size: 14px;" >Connect</td>
                   </tr>
                   </table>
               </td>
